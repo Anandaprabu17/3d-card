@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>3d card</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2 class="name">Eraser</h2>
+        <a href="#" class="buy">buy now</a>
+        <img src="images/eraser.webp" class="product" />
+      </div>
+      <div class="box boxSec">
+        <h2 class="name">Note Book</h2>
+        <a href="#" class="buy">buy now</a>
+        <img src="images/note.webp" class="product" />
+      </div>
+      <div class="box boxThrd">
+        <h2 class="name">Pencil</h2>
+        <a href="#" class="buy">buy now</a>
+        <img src="images/pencil.webp" class="product" />
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+      integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".box"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+      });
+      VanillaTilt.init(document.querySelector(".boxSec"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+      });
+      VanillaTilt.init(document.querySelector(".boxThrd"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+      });
+    </script>
+  </body>
+</html>
